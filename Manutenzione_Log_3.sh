@@ -35,4 +35,4 @@ echo "Log compresso: $ARCHIVE_DIR/backup_$DATE_TAG.log.gz"
 echo "Pulizia vecchi archivi..."
 ls -tp "$ARCHIVE_DIR"/backup_*.log.gz | grep -v '/$' | tail -n +$((MAX_ARCHIVES + 1)) | xargs -I {} rm -- {} 2>/dev/null
 
-echo "--- Manutenzione completata con successo ---"
+echo "--- Manutenzione completata con successo ---" 
